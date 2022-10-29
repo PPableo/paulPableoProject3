@@ -1,12 +1,25 @@
-import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import ProductDisplay from './components/ProductDisplay';
+import Footer from './components/Footer';
 
 function App() {
+  const [services, setServices] = useState([]);
+  const [buttonClick, setButtonClick] = useState(false)
+  const handleClick = () => {
+    setButtonClick(true)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World!</h1>
-      </header>
+      <Header />
+      <button onClick={handleClick}>Services</button>
+      {
+        buttonClick
+          ? <ProductDisplay />
+          : null
+      }
+      <Footer />
     </div>
   );
 }
