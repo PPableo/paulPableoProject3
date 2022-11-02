@@ -1,0 +1,241 @@
+@use "./partials/setup";
+@use "./partials/cart";
+@use "./partials/categoriesModal";
+@use "./partials/landingPage";
+
+/* --------------------------------- IMPORT --------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Old+Standard+TT&family=Poppins&display=swap');
+
+/* ---------------------------------- SETUP --------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------- GENERAL -------------------------------- */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/* span {
+    font-style: inherit;
+    font-weight: inherit;
+} */
+
+input, button {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.row {
+    width: 50%;
+}
+
+// .wrapper {
+//     width: min(80%, 1500px);
+//     margin: 0 auto;
+// }
+
+/* ------------------------------- SHORTSTYLE ------------------------------- */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.RText {
+    text-align: right;
+}
+
+.background {
+    background-color: #f6f9fc;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fFlex {
+    display: flex;
+}
+
+.leftRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightRow {
+    display: flex;
+}
+
+/* ---------------------------------- HEAD ---------------------------------- */
+
+.head {
+    background-color: #A19882;
+    padding: 10px;
+    color: #FEF7DC;
+}
+
+.head i {
+    margin-right: 10px;
+}
+
+.logo {
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.3rem;
+}
+
+/* --------------------------------- SEARCH --------------------------------- */
+
+.searchBox {
+    width: 80%;
+    border: 2px solid rgba(0,0,0, 0.1);
+}
+
+.searchBox i {
+    width: 7%;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1.7rem;
+    margin-top: 5px;
+}
+
+.searchBox input {
+    width: 100%;
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+.searchBox span {
+    width: 15%;
+    opacity: 0.5;
+    border-left: 2px solid rgba(0,0,0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search .fFlex {
+    justify-self: end;
+}
+
+.categories {
+    background-color: #f6f9fc;
+    padding: 5px 20px;
+    border-radius: 5px;
+    height: 4vh;
+    margin-top: 10px;
+}
+
+.categories span {
+    margin-right: 20px;
+    font-size: 1.3rem;
+
+}
+
+.categories h4 {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.categories h4 i {
+    margin-left: 10px;
+}
+
+.header {
+    height: 8vh;
+    box-shadow: -1px 15px 17px -8px rgba(0,0,0, 0.1);
+}
+
+.header ul {
+    line-height: 8vh;
+    display: flex;
+}
+
+.header ul li {
+    margin-left: 30px;
+}
+
+.header ul li li a {
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header ul li li a:hover {
+    color: #E6DDC6;
+}
+/* NOT WORKING */
+
+/* ---------------------------------- LOGO ---------------------------------- */
+
+.brandLogo {
+    font-family: Old Standard TT, serif;
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+
+.logoTitle {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.subtitle {
+    margin-left: 2rem;
+    font-size: .5rem;
+    position: absolute;
+    min-width: 200px;
+    top: 4.3rem;
+    left: 2rem;
+    line-height: 1rem;
+    font-family: Dosis, sans-serif;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #A19882;
+    padding: 10px;
+    color: #FEF7DC;
+}

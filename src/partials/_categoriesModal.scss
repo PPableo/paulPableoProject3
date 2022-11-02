@@ -1,0 +1,17 @@
+.contentWidth {
+    width: 77%;
+}
+
+.category {
+    width: 25%;
+}
+
+.products {
+    width: 115%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
