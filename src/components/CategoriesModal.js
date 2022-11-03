@@ -1,3 +1,5 @@
+// Stretch/New Feature; Popup modal to show categories
+
 const CategoriesModal = () => {
     const data = [
         {

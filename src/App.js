@@ -20,13 +20,6 @@ import LandingPageImg from "./components/LandingPageImg";
 // </div>
 
 function App() {
-  // const [services, setServices] = useState([]);
-  // const [buttonClick, setButtonClick] = useState(false)
-  // const handleClick = () => {
-  //   setButtonClick(true)
-  // }
-  // const [cartItems, setCartItems] = useState([])
-  // const
 
   return (
     <>

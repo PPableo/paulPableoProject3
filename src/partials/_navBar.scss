@@ -1,7 +1,7 @@
 /* --------------------------------- SEARCH --------------------------------- */
 
 .searchBox {
-    width: 80%;
+    width: 40%;
     border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -9,7 +9,7 @@
     width: 7%;
     text-align: center;
     opacity: 0.5;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-top: 5px;
 }
 
@@ -19,11 +19,11 @@
 }
 
 ::placeholder {
-    font-size: 1.5rem;
+    font-size: .8rem;
 }
 
 .searchBox span {
-    width: 15%;
+    width: 20%;
     opacity: 0.5;
     border-left: 2px solid rgba(0, 0, 0, 0.1);
     text-align: center;

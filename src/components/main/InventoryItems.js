@@ -1,7 +1,6 @@
 import firebaseConfig from "../../firebase";
 import { useState, useEffect } from 'react';
 import { getDatabase, ref, onValue, } from 'firebase/database';
-import Cart from "../Cart";
 
 const InventoryItems = () => {
     const [services, setServices] = useState([]);
@@ -16,37 +15,8 @@ const InventoryItems = () => {
             setServices(data.productItems)
         });
     }, []);
-
-    // const [cartItems, setCartItems] = useState([]);
-    // const onAdd = (product) => {
-    //     const exist = cartItems.find((x) => x.id === product.id);
-    //     if (exist) {
-    //         setCartItems(
-    //             cartItems.map((x) =>
-    //                 x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
-    //             )
-    //         );
-    //     } else {
-    //         setCartItems([...cartItems, { ...product, qty: 1 }]);
-    //     }
-    // };
-
-    // const onRemove = (product) => {
-    //     const exist = cartItems.find((x) => x.id === product.id);
-    //     if (exist.qty === 1) {
-    //         setCartItems(cartItems.filter((x) => x.id !== product.id));
-    //     } else {
-    //         setCartItems(
-    //             cartItems.map((x) =>
-    //                 x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
-    //             )
-    //         );
-    //     }
-    // };
-
     return (
         <div className="products">
-            {/* <Cart /> */}
             <ul>
                 {services.map((service) => {
                     console.log(service)
@@ -54,15 +24,18 @@ const InventoryItems = () => {
                         <li key={service.id}>
                             <div className='product mtop'>
                                 <div className='img'>
-                                    <img src={service.cover} alt='' />
-
+                                    <img src={service.cover} alt={service.name} />
                                 </div>
                                 <div className='product-details'>
                                     <h3>{service.name}</h3>
                                     <div className='price'>
                                         <h4>${service.price}.00 </h4>
+
+                                        {/* MVP onclick event to change state and add into cart ++ component */}
                                         {/* <button onClick={() => addToCart(service)}> */}
-                                            <button>
+
+
+                                        <button>
                                             <i className='fa fa-plus'></i>
                                         </button>
                                     </div>
