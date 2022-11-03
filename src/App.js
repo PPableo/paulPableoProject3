@@ -1,11 +1,12 @@
 import "./App.scss"
 import { useState } from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
+import Head from "./components/Head";
 import Header from './components/Header';
-// import ProductDisplay from './components/ProductDisplay';
 import Footer from './components/Footer';
-import Service from './components/main/Service';
+import Service from './pages/Service';
 import LandingPageImg from "./components/LandingPageImg";
+// import Carts from "./components/Cart";
 
 // <div className="App">
 //   <ProductDisplay />
@@ -20,17 +21,22 @@ import LandingPageImg from "./components/LandingPageImg";
 
 function App() {
   // const [services, setServices] = useState([]);
-  const [buttonClick, setButtonClick] = useState(false)
-  const handleClick = () => {
-    setButtonClick(true)
-  }
+  // const [buttonClick, setButtonClick] = useState(false)
+  // const handleClick = () => {
+  //   setButtonClick(true)
+  // }
+  // const [cartItems, setCartItems] = useState([])
+  // const
 
   return (
     <>
+      <Head />
       <Header />
       <Routes>
         <Route path="/" element={ <LandingPageImg /> } />
-        <Route path="/main/Service.js" element={ <Service />} />
+        <Route path="/pages/Service.js" element={ <Service />} />
+        {/* <Route path="/pages/Service.js" element={ <Service />} />
+        <Route path="/pages/Service.js" element={ <Service />} /> */}
       </Routes>
       <Footer />
     </>

@@ -1,0 +1,108 @@
+/* ---------------------------------- GENERAL SETUP --------------------------------- */
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: min(80%, 1500px);
+    margin: 0 auto;
+}
+
+/* ---------------------------------- HEAD ---------------------------------- */
+
+.head {
+    background-color: #A19882;
+    padding: 10px;
+    color: #FEF7DC;
+}
+
+.head i {
+    padding: 10px;
+}
+
+.logo {
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.3rem;
+}
+
+/* --------------------------------- GENERAL -------------------------------- */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+/* ------------------------------- SHORTHAND STYLES ------------------------------- */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.RText {
+    text-align: right;
+}
+
+.background {
+    background-color: #f6f9fc;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fFlex {
+    display: flex;
+}
+
+.leftRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightRow {
+    display: flex;
+}
+
+.row {
+    width: 50%;
+}

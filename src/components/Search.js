@@ -4,11 +4,10 @@ const Search = () => {
   return (
     <>
         <section className="search">
-          <div className="container cFlex">
+          <div className="container cFlex wrapper">
             <div className="logo width">
               <a href='/' className='brandLogo'>
-                <span className='logoTitle'>LUX</span>
-                <span className="subtitle">NAIL | BEAUTY BAR</span>
+                <span className='logoTitle'>LUX<span className="subtitle">NAIL | BEAUTY BAR</span></span>
               </a>
             </div>
 

@@ -1,0 +1,112 @@
+/* --------------------------------- SEARCH --------------------------------- */
+
+.searchBox {
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.searchBox i {
+    width: 7%;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1.7rem;
+    margin-top: 5px;
+}
+
+.searchBox input {
+    width: 100%;
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+.searchBox span {
+    width: 15%;
+    opacity: 0.5;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search .fFlex {
+    justify-self: end;
+}
+
+/* ---------------------------- CATEGORIES MODAL ---------------------------- */
+
+.categories {
+    background-color: #f6f9fc;
+    padding: 5px 5px;
+    border-radius: 5px;
+    height: 4vh;
+    margin-top: 15px;
+
+    .fa-solid.fa-border-all {
+        padding-top: 14px;
+    }
+
+}
+
+.categories span {
+    font-size: 1.3rem;
+    margin-right: 10px;
+
+}
+
+.categories h4 {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.categories h4 i {
+    margin-left: 10px;
+}
+
+.header {
+    height: 6vh;
+    box-shadow: -1px 15px -17px -8px rgba(0, 0, 0, 0.1);
+}
+
+.header ul {
+    line-height: 5vh;
+    display: flex;
+
+    li a {
+        text-transform: uppercase;
+        margin-left: 30px;
+        transition: 0.5s;
+        font-size: 15px;
+        font-weight: 400;
+
+        &:hover {
+            transition: 0.5s;
+            color: #E6DDC6;
+        }
+    }
+}
+
+/* ---------------------------------- LOGO ---------------------------------- */
+
+.brandLogo {
+    font-family: Old Standard TT, serif;
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+
+.logoTitle {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.subtitle {
+    margin-left: 2rem;
+    font-size: .5rem;
+    position: relative;
+    top: .7rem;
+    left: -6rem;
+    line-height: 1rem;
+    font-family: Dosis, sans-serif;
+}
